@@ -31,6 +31,5 @@ class NoOggyChecker
       Console.WriteLine("Failed!!");
       return 1;
     }  
-
   }
 }

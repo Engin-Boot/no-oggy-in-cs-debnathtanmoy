@@ -1,11 +1,13 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 class NoOggyChecker
 {
   static void RemoveOggy(List<string> names)
   {
-    foreach (var name in names)
+    foreach (var name in names.ToList())
     {
         if(name.StartsWith("oggy")) {
             Console.WriteLine($"Need to remove {name}!");
@@ -28,6 +30,7 @@ class NoOggyChecker
     } else {
       Console.WriteLine("Failed!!");
       return 1;
-    }
+    }  
+
   }
 }
